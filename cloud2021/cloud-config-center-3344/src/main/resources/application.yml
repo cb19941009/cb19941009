@@ -8,10 +8,10 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:cb19941009/cb.git #GitHub上面的git仓库名字
+          uri: https://github.com/cb19941009/cb19941009.git #GitHub上面的git仓库名字
           ####搜索目录
           search-paths:
-            - springcloud-config
+            - cloud2021/cloud-config-center-3344/src/main/resources
       ####读取分支
       label: master
 
