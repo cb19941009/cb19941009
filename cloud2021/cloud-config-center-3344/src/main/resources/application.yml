@@ -11,10 +11,20 @@ spring:
           uri: https://github.com/cb19941009/cb19941009.git #GitHub上面的git仓库名字
           ####搜索目录
           search-paths:
-            - cloud2021/cloud-config-center-3344/src/main/resources
+            - cloud2021
       ####读取分支
       label: master
-
+  rabbitmq:
+    host: 192.168.163.101
+    port: 5672
+    username: guest
+    password: guest
+#rabbitmq相关配置,暴露bus刷新配置的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
 #服务注册到eureka地址
 eureka:
   client:
